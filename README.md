@@ -63,31 +63,6 @@ To embed GLava in your desktop (for EWMH compliant window managers), run it with
 
 For more information, see the [main configuration page](https://github.com/jarcode-foss/glava/wiki).
 
-## Desktop window compatibility
-
-GLava aims to be compatible with _most_ EWMH compliant window managers. Below is a list of common window managers and issues specific to them for trying to get GLava to behave as a desktop window or widget:
-
-| WM | ! | Details
-| :---: | --- | --- |
-| Mutter (GNOME, Budgie) | ![-](https://placehold.it/15/118932/000000?text=+) | `"native"` (default) opacity should be used
-| KWin (KDE) | ![-](https://placehold.it/15/118932/000000?text=+) | "Show Desktop" [temporarily hides GLava](https://github.com/jarcode-foss/glava/issues/4#issuecomment-419729184)
-| Openbox (LXDE or standalone) | ![-](https://placehold.it/15/118932/000000?text=+) | No issues
-| Xfwm (XFCE) | ![-](https://placehold.it/15/118932/000000?text=+) | No issues
-| Fluxbox | ![-](https://placehold.it/15/118932/000000?text=+) | No issues
-| IceWM | ![-](https://placehold.it/15/118932/000000?text=+) | No issues
-| Bspwm | ![-](https://placehold.it/15/118932/000000?text=+) | No issues
-| SpectrWM |
-| Herbstluftwm | ![-](https://placehold.it/15/118932/000000?text=+) | `hc rule windowtype~'_NET_WM_WINDOW_TYPE_DESKTOP' manage=off` can be used to unmanage desktop windows
-| Unity | ![-](https://placehold.it/15/118932/000000?text=+) | No issues
-| AwesomeWM | ![-](https://placehold.it/15/118932/000000?text=+) | Defaults to unmanaged
-| i3 (and i3-gaps) | ![-](https://placehold.it/15/118932/000000?text=+) | Defaults to unmanaged
-| spectrwm | ![-](https://placehold.it/15/118932/000000?text=+) | Defaults to unmanaged
-| EXWM | ![-](https://placehold.it/15/f03c15/000000?text=+) | EXWM does not have a desktop, and forces window decorations
-| Enlightenment | ![-](https://placehold.it/15/1589F0/000000?text=+) | Needs testing
-| Xmonad | ![-](https://placehold.it/15/118932/000000?text=+) | No issues after enabling ewmh hints via `XMonad.Hooks.EwmhDesktops.ewmh`
-| Any non EWMH-compliant WM | ![-](https://placehold.it/15/f03c15/000000?text=+) | Window types and hints will not work if the window manager does not support the EWMH standards.
-
-Note that some WMs listed without issues have specific overrides when using the `--desktop` flag. See `shaders/env_*.glsl` files for details.
 
 ## Reading from MPD's FIFO output
 
