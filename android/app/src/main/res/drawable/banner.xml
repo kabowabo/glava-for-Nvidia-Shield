@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 320x180 leanback banner: a row of GLava-style blue bars -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path android:fillColor="#101018" android:pathData="M0,0h320v180h-320z" />
+    <path android:fillColor="#3366B2"
+        android:pathData="M40,150h14v-40h-14z M60,150h14v-80h-14z M80,150h14v-110h-14z M100,150h14v-70h-14z M120,150h14v-95h-14z M140,150h14v-125h-14z M160,150h14v-100h-14z M180,150h14v-60h-14z M200,150h14v-85h-14z M220,150h14v-115h-14z M240,150h14v-55h-14z M260,150h14v-30h-14z" />
+    <path android:fillColor="#A0A0B2" android:pathData="M30,152h260v3h-260z" />
+</vector>
